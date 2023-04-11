@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDA DE PASSAGEM</title>
+    <style>
+        body
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            margin: 0px;
+        }
+        .principal
+        {
+            position: relative;
+        }
+        .P00
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:58px;
+            top:172px; 
+            background-color: green;
+        }
+        .p01
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:150px;
+            top:172px; 
+            background-color: green;
+        }
+        .p10
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:58px;
+            top:260px;
+            background-color: green; 
+        }
+        .p11
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:150px;
+            top:260px; 
+            background-color: green;
+        }
+        .p20
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:58px;
+            top:350px; 
+            background-color: green;
+        }
+        .p21
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:150px;
+            top:350px; 
+            background-color: green;
+        }
+        .p30
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:58px;
+            top:440px; 
+            background-color: green;
+        }
+        .p31
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:150px;
+            top:440px; 
+            background-color: green;
+        }
+        .p40
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:58px;
+            top:530px; 
+            background-color: green;
+        }
+        .p41
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:150px;
+            top:530px; 
+            background-color: green;
+        }
+        .p50
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:58px;
+            top:619px; 
+            background-color: green;
+        }
+        .p51
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:150px;
+            top:619px; 
+            background-color: green;
+        }
+        .p02
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:320px;
+            top:172px; 
+            background-color: green;
+        }
+        .p03
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:413px;
+            top:172px; 
+            background-color: green;
+        }
+        .p12
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:320px;
+            top:260px; 
+            background-color: green;
+        }
+        .p13
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:413px;
+            top:260px; 
+            background-color: green;
+        }
+        .p22
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:320px;
+            top:350px; 
+            background-color: green;
+        }
+        .p23
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:413px;
+            top:350px; 
+            background-color: green;
+        }
+        .p32
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:320px;
+            top:440px; 
+            background-color: green;
+        }
+        .p33
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:413px;
+            top:440px; 
+            background-color: green;
+        }
+        .p42
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:320px;
+            top:530px; 
+            background-color: green;
+        }
+        .p43
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:413px;
+            top:530px; 
+            background-color: green;
+        }
+        .p52
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:320px;
+            top:619px; 
+            background-color: green;
+        }
+        .p53
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left:413px;
+            top:619px; 
+            background-color: green;
+        }
+
+        .mensagem
+        {
+            font-size: 30px;
+            width: 500px;
+            height: 200px;
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="Limpar();">
+
+     <div class="principal">
+     <img src="onibus.jpg">
+
+     <div onclick="Preencher('P00');" class="P00" id="P00"></div>  <!-- PRIMEIRA FILEIRA -->
+     <div onclick="Preencher('P01');" class="P01" id="P01"></div>
+     <div onclick="Preencher('P02');" class="P02" id="P02"></div>
+     <div onclick="Preencher('P03');" class="P03" id="P03"></div>
+
+     <div onclick="Preencher('P10');" class="P10" id="P10"></div>   <!-- SEGUNDA FILEIRA -->
+     <div onclick="Preencher('P11');" class="P11" id="P11"></div>
+     <div onclick="Preencher('P12');" class="P12" id="P12"></div>
+     <div onclick="Preencher('P13');" class="P13" id="P13"></div>
+
+     <div onclick="Preencher('P20');" class="P20" id="P20"></div>   <!-- TERCEIRA FILEIRA -->
+     <div onclick="Preencher('P21');" class="P21" id="P21"></div>
+     <div onclick="Preencher('P22');" class="P22" id="P22"></div>
+     <div onclick="Preencher('P23');" class="P23" id="P23"></div>
+
+     <div onclick="Preencher('P30');" class="P30" id="P30"></div>  <!-- QUARTA FILEIRA -->
+     <div onclick="Preencher('P31');" class="P31" id="P31"></div>
+     <div onclick="Preencher('P32');" class="P32" id="P32"></div>
+     <div onclick="Preencher('P33');" class="P33" id="P33"></div>
+
+     <div onclick="Preencher('P40');" class="P40" id="P40"></div>   <!-- QUINTA FILEIRA -->
+     <div onclick="Preencher('P41');" class="P41" id="P41"></div>
+     <div onclick="Preencher('P42');" class="P42" id="P42"></div>
+     <div onclick="Preencher('P43');" class="P43" id="P43"></div>
+
+     <div onclick="Preencher('P50');" class="P50" id="P50"></div>   <!-- SEXTA FILEIRA -->
+     <div onclick="Preencher('P51');" class="P51" id="P51"></div>
+     <div onclick="Preencher('P52');" class="P52" id="P52"></div>
+     <div onclick="Preencher('P53');" class="P53" id="P53"></div>
+    </div>
+    <br>
+    <body>
+    <div class="mensagem" id="mensagem">Poltronas Vendidas: <span id="contagemAssentos">0</span></div>
+        
+    </body>
+<script>
+      var cliques = 1
+    var contAssentosObj = document.getElementById("contagemAssentos")
+    var contAssentos = 0
+    function Preencher(qual){
+        let assento = document.getElementById(qual)
+
+        var cliques = 1
+    var contAssentosObj = document.getElementById("contagemAssentos")
+    var contAssentos = 0
+    function Preencher(qual){
+        let assento = document.getElementById(qual)
+
+            if(cliques == 1)
+            {
+                if((assento.style.backgroundColor == '') || (assento.style.backgroundColor == "green")){
+                    assento.style.backgroundColor = "red";
+                    cliques++;
+                    contAssentos++;
+                }else if(assento.style.backgroundColor == "red"){
+                    assento.style.backgroundColor = "green"
+                    contAssentos--;
+                    cliques = 1
+
+                }
+             
+            }
+            else
+            {
+                if(assento.style.backgroundColor == "red"){
+                    assento.style.backgroundColor = "green"
+                    cliques = 1
+                    contAssentos--;
+                    console.log(contAssentos)
+                }else{
+                    assento.style.backgroundColor = "red";
+                    cliques++;
+                    contAssentos++;
+                    console.log(contAssentos)
+                }
+            }
+
+            contAssentosObj.innerHTML = contAssentos 
+            
+    }
+
+
+
+       //COMPLETE O PROGRAMA COM O CÓDIGO JAVASCRIPT
+       // DE ACORDO COM O VÍDEO:
+       
+         var P00 = document.getElementById("P00");
+        var clicked = false;
+
+        P00.addEventListener("click", function() {
+    if (clicked ) {
+        P00.style.background = "green";
+    clicked=false
+      } else {
+ P00.style.background= "red";
+   clicked= true;
+      }})
+
+     
+      var P01 = document.getElementById("P01");
+         var clicked = false;
+
+         P01.addEventListener("click", function() {
+      if (clicked ) {
+         P01.style.background = "green";
+     clicked=false
+      } else {
+ P01.style.background= "red";
+   clicked= true;
+      }})
+
+     var P02 = document.getElementById("P02");
+     var clicked = false;
+
+         P02.addEventListener("click", function() {
+      if (clicked ) {
+         P02.style.background = "green";
+     clicked=false
+      } else {
+ P02.style.background= "red";
+   clicked= true;
+      }})
+
+      var P03 = document.getElementById("P03");
+        var clicked = false;
+
+         P03.addEventListener("click", function() {
+      if (clicked ) {
+         P03.style.background = "green";
+     clicked=false
+      } else {
+ P03.style.background= "red";
+   clicked= true;
+      }})
+      var P12 = document.getElementById("P12");
+         var clicked = false;
+
+         P12.addEventListener("click", function() {
+      if (clicked ) {
+         P12.style.background = "green";
+     clicked=false
+      } else {
+ P12.style.background= "red";
+   clicked= true;
+      }})
+
+     var P13 = document.getElementById("P13");
+        var clicked = false;
+
+        P13.addEventListener("click", function() {
+      if (clicked ) {
+        P01.style.background = "green";
+     clicked=false
+      } else {
+ P13.style.background= "red";
+   clicked= true;
+      }})
+
+      var P22 = document.getElementById("P22");
+        var clicked = false;
+
+         P22.addEventListener("click", function() {
+      if (clicked ) {
+         P01.style.background = "green";
+     clicked=false
+     } else {
+ P22.style.background= "red";
+ clicked= true;
+      }})
+
+      var P23 = document.getElementById("P23");
+        var clicked = false;
+
+        P23.addEventListener("click", function() {
+   if (clicked ) {
+       P23.style.background = "green";
+     clicked=false
+      } else {/ P23.style.background= "red";
+   clicked= true;
+     }})
+
+     var P32 = document.getElementById("P32");
+        var clicked = false;
+
+        P32.addEventListener("click", function() {
+      if (clicked ) {
+         P01.style.background = "green";
+     clicked=false
+      } else {
+ P32.style.background= "red";
+   clicked= true;
+     }})
+
+      var P33 = document.getElementById("P33");
+         var clicked = false;
+
+         P33.addEventListener("click", function() {
+      if (clicked ) {
+         P01.style.background = "green";
+     clicked=false
+      } else {
+ P33.style.background= "red";
+   clicked= true;
+      }})
+
+
+      var P42 = document.getElementById("P42");
+       var clicked = false;
+
+        P42.addEventListener("click", function() {
+      if (clicked ) {
+        P01.style.background = "green";
+    clicked=false
+     } else {
+P42.style.background= "red";
+  clicked= true;
+     }})
+
+     var P43 = document.getElementById("P43");
+         var clicked = false;
+
+//         P43.addEventListener("click", function() {
+//      if (clicked ) {
+//         P43.style.background = "green";
+//     clicked=false
+//      } else {
+// P43.style.background= "red";
+//   clicked= true;
+//      }})
+
+//      var P10 = document.getElementById("P10");
+//         var clicked = false;
+
+//         P10.addEventListener("click", function() {
+//      if (clicked ) {
+//         P10.style.background = "green";
+//     clicked=false
+//      } else {
+// P10.style.background= "red";
+//   clicked= true;
+//      }})
+
+//      var P11 = document.getElementById("P11");
+//         var clicked = false;
+
+//         P11.addEventListener("click", function() {
+//      if (clicked ) {
+//         P11.style.background = "green";
+//     clicked=false
+//      } else {
+// P11.style.background= "red";
+//   clicked= true;
+//      }})
+//      var P20 = document.getElementById("P20");
+//         var clicked = false;
+
+//         P20.addEventListener("click", function() {
+//      if (clicked ) {
+//         P20.style.background = "green";
+//     clicked=false
+//      } else {
+// P20.style.background= "red";
+//   clicked= true;
+//      }})
+
+//      var P21 = document.getElementById("P21");
+//         var clicked = false;
+
+//         P21.addEventListener("click", function() {
+//      if (clicked ) {
+//         P21.style.background = "green";
+//     clicked=false
+//      } else {
+// P21.style.background= "red";
+//   clicked= true;
+//      }})
+
+//      var P30 = document.getElementById("P30");
+//         var clicked = false;
+
+//         P30.addEventListener("click", function() {
+//      if (clicked ) {
+//         P30.style.background = "green";
+//     clicked=false
+//      } else {
+// P30.style.background= "red";
+//   clicked= true;
+//      }})
+ 
+//      var P31 = document.getElementById("P31");
+//         var clicked = false;
+
+//         P31.addEventListener("click", function() {
+//      if (clicked ) {
+//         P31.style.background = "green";
+//     clicked=false
+//      } else {
+// P31.style.background= "red";
+//   clicked= true;
+//      }})
+
+//      var P40 = document.getElementById("P40");
+//         var clicked = false;
+
+//         P40.addEventListener("click", function() {
+//      if (clicked ) {
+//         P40.style.background = "green";
+//     clicked=false
+//      } else {
+// P40.style.background= "red";
+//   clicked= true;
+//      }})
+ 
+//      var P41 = document.getElementById("P41");
+//         var clicked = false;
+
+//         P41.addEventListener("click", function() {
+//      if (clicked ) {
+        P41.style.background = "green";
+    clicked=false
+      } else {
+     P41.style.background= "red";
+   clicked= true;
+      }})
+      var P50 = document.getElementById("P50");
+         var clicked = false;
+
+         P50.addEventListener("click", function() {
+      if (clicked ) {
+        P50.style.background = "green";
+     clicked=false
+    } else {
+P50.style.background= "red";
+  clicked= true;
+     }})
+
+    var P51 = document.getElementById("P51");
+        var clicked = false;
+
+         P51.addEventListener("click", function() {
+     if (clicked ) {
+        P51.style.background = "green";
+    clicked=false
+      } else {
+P51.style.background= "red";
+  clicked= true;
+     }})
+       var P52 = document.getElementById("P52");
+        var clicked = false;
+
+        P52.addEventListener("click", function() {
+      if (clicked ) {
+         P52.style.background = "green";
+     clicked=false
+      } else {
+ P52.style.background= "red";
+  clicked= true;
+      }})
+
+      var P53 = document.getElementById("P53");
+       var clicked = false;
+
+         P53.addEventListener("click", function() {
+      if (clicked ) {
+         P53.style.background = "green";
+    clicked=false
+      } else {
+ P53.style.background= "red";
+   clicked= true;
+   }})
+
+
+</script>
+</html>
